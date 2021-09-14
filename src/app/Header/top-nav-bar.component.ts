@@ -5,5 +5,7 @@ import {Component} from "@angular/core"
     templateUrl: 'top-nav-bar.component.html'
 })
 export class TopNavBarComponent{
-    
+    home: string = "Home"
+    search: string = "Search"
+    watchlist: string = "Watchlist"
 }

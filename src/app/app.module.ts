@@ -6,6 +6,7 @@ import { NavButtonsComponent } from './Buttons/nav-buttons.component';
 import { CarouselComponent } from './Carousel/carousel.component';
 import { BottomNavBarComponent } from './Footer/bottom-nav-bar.component';
 import { TopNavBarComponent } from './Header/top-nav-bar.component';
+import { LayoutMainComponent } from './Layout/layout-main.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { TopNavBarComponent } from './Header/top-nav-bar.component';
     TopNavBarComponent,
     BottomNavBarComponent,
     CarouselComponent,
-    NavButtonsComponent
+    NavButtonsComponent,
+    LayoutMainComponent
 
   ],
   imports: [
