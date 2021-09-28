@@ -8,5 +8,10 @@ export const mock_moviecards = [
         title: "Spooky Buddies",
         company: "Disney",
         imgPath: "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B738C3189B672884AEF7CF49359FB5E510F33F67DDDA58E5CD2E5073FFEB932C/scale?width=400&aspectRatio=1.78&format=jpeg"
+    },
+    {
+        title: "Luca",
+        company: "Disney",
+        imgPath: "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/1CCEA18C302E3B726780C04B579576DE7A7300E86ED25F2067ADF34DEE0BE39E/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal"
     }
 ]
