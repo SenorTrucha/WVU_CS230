@@ -107,7 +107,8 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/DrStrange.jpg"
             ],
             "styles": [
               "src/styles.css"

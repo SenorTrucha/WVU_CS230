@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './body/home/home.component';
 import { SearchComponent } from './body/search/search.component';
 import { MoviesComponent } from './body/movies/movies.component';
+import { MovieCardsComponent } from './body/movie-cards/movie-cards.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MoviesComponent } from './body/movies/movies.component';
     SearchComponent,
     WatchlistComponent,
     OriginalsComponent,
-    MoviesComponent
+    MoviesComponent,
+    MovieCardsComponent
 
   ],
   imports: [
