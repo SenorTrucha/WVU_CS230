@@ -14,6 +14,8 @@ import { HomeComponent } from './body/home/home.component';
 import { SearchComponent } from './body/search/search.component';
 import { MoviesComponent } from './body/movies/movies.component';
 import { MovieCardsComponent } from './body/movie-cards/movie-cards.component';
+import { UserInfoComponent } from './User-Info/user-info.component';
+import{ HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -28,12 +30,13 @@ import { MovieCardsComponent } from './body/movie-cards/movie-cards.component';
     WatchlistComponent,
     OriginalsComponent,
     MoviesComponent,
-    MovieCardsComponent
-
+    MovieCardsComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
