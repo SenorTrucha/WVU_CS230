@@ -1,4 +1,5 @@
 import { Component, Input } from "@angular/core";
+import { MovieCardService } from "./movie-cards.service";
 
 @Component({
     selector: 'movie-cards',
