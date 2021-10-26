@@ -1,3 +1,23 @@
 <div class="position-relative pt-5 pb-5" style="height: 200px;" style="background-color: rgb(35, 35, 78);">
-<button style="background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42));"><img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E8707E2889AC7DCB1D39D1486ED415148440C65BF4AEC7B5906286294BFA9A2F/scale?width=400&aspectRatio=1.78&format=jpeg" style="height: 144px; width: 256px;"></button>
+    <button class="position-relative mx-2" style="background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42));"><img
+            src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E8707E2889AC7DCB1D39D1486ED415148440C65BF4AEC7B5906286294BFA9A2F/scale?width=400&aspectRatio=1.78&format=jpeg"
+            style="height: 144px; width: 256px;"></button>
+    <div class="position-relative px-2" *ngFor="let watchlistcard of watchlistcards">
+        <add-watchlist-card Movie={{watchlistcard.Movie}} User={{watchlistcard.User}}></add-watchlist-card>
+    </div>
+
+    <form #userList="ngForm" (ngSubmit)="onEditWatchlistInfo(userList.value)" class="position-relative mx-2 mt-2 mb-2"
+        style="height: 144px; width: 256px; background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42));">
+        <div class="form-group">
+            <label class="text-white" for="Movie">Movie</label><br>
+            <input type="text" id="Name" name="Movie" class="form-control" ngModel>
+        </div>
+        <pre></pre>
+        <div class="form-group">
+            <label class="text-white" for="User">User</label><br>
+            <input type="text" id="User" name="User" class="form-control" ngModel>
+        </div>
+        <pre></pre>
+        <button class="btn btn-primary" type="submit">Add</button>
+    </form>
 </div>

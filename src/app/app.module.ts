@@ -16,6 +16,10 @@ import { MoviesComponent } from './body/movies/movies.component';
 import { MovieCardsComponent } from './body/movie-cards/movie-cards.component';
 import { UserInfoComponent } from './User-Info/user-info.component';
 import{ HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
+import { WatchlistCard } from './body/add-watchlist-card/watchlistcards.model';
+import { WatchlistCardService } from './body/add-watchlist-card/add-watchlist-card.service';
+import { AddWatchCardlistComponent } from './body/add-watchlist-card/add-watchlist-card.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +35,14 @@ import{ HttpClientModule } from '@angular/common/http'
     OriginalsComponent,
     MoviesComponent,
     MovieCardsComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    AddWatchCardlistComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
