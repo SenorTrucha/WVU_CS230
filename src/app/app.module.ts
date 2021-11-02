@@ -20,6 +20,10 @@ import { FormsModule } from '@angular/forms';
 import { WatchlistCard } from './body/add-watchlist-card/watchlistcards.model';
 import { WatchlistCardService } from './body/add-watchlist-card/add-watchlist-card.service';
 import { AddWatchCardlistComponent } from './body/add-watchlist-card/add-watchlist-card.component';
+import { provideFirebaseApp, initializeApp } from '@angular/fire/app'
+import { environment } from 'src/environments/environment';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireDatabase, AngularFireDatabaseModule } from '@angular/fire/compat/database';
 
 @NgModule({
   declarations: [
@@ -42,7 +46,10 @@ import { AddWatchCardlistComponent } from './body/add-watchlist-card/add-watchli
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(environment.firebase, 'Disney-plus'),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
   ],
   providers: [],
   bootstrap: [AppComponent]

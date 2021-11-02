@@ -115,6 +115,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "DisneyPlus:build:production",
+            "firebaseProject": "disney-app-167d8",
+            "firebaseHostingSite": "disney-app-167d8"
+          }
         }
       }
     }

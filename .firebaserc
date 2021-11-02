@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "disney-app-167d8": {
+      "hosting": {
+        "DisneyPlus": [
+          "disney-app-167d8"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "disney-app-167d8"
+  }
+}
