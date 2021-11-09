@@ -17,13 +17,12 @@ import { MovieCardsComponent } from './body/movie-cards/movie-cards.component';
 import { UserInfoComponent } from './User-Info/user-info.component';
 import{ HttpClientModule } from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
-import { WatchlistCard } from './body/add-watchlist-card/watchlistcards.model';
-import { WatchlistCardService } from './body/add-watchlist-card/add-watchlist-card.service';
 import { AddWatchCardlistComponent } from './body/add-watchlist-card/add-watchlist-card.component';
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app'
 import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabase, AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +39,8 @@ import { AngularFireDatabase, AngularFireDatabaseModule } from '@angular/fire/co
     MoviesComponent,
     MovieCardsComponent,
     UserInfoComponent,
-    AddWatchCardlistComponent
+    AddWatchCardlistComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
